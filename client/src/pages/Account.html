@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Account</title>
+	<link rel="stylesheet" href="css/site-1-css.css">
+</head>
+<body>
+
+	<div class="shapka">
+	<a class="city">г. Москва</a>
+	<a class="korzina" href="Basket.html">Корзина</a>
+	<a href="Favourites.html">Избранное</a>
+	<a href="Account.html">Личный кабинет</a>>
+</div>
+	<div class="gender">
+	<a class="woman" href="index.html">Женщинам</a>
+	<a class="man" href="index.html">Мужчинам</a>
+	<a class="kid" href="index.html">Детям</a>
+	<div>
+	<img class="logo" src="img/logo_boutique.png">
+		<img class="search-img" src="img/search111.png" alt="">
+	<div class="search-form">
+		<input class="search-form-txt" type="text" placeholder="Поиск">
+	</div>
+	<div class="kategorii">
+	<a class="novinki" href="index.html">Новинки</a>
+	<a class="odezda" href="index.html">Одежда</a>
+	<a class="obuv" href="index.html">Обувь</a>
+	<a class="akses" href="index.html">Аксессуары</a>
+	<a class="brands" href="index.html">Бренды</a>
+	<a class="sport" href="index.html">Спорт</a>
+	<a class="skidki" href="index.html">Скидки %</a>
+	<br>
+	<h4 class="header-lk">Личный кабинет</h4>
+	<div class="kategorii-lk">
+	<a class="" href="">Мои данные</a>
+	<br>
+	<br>
+	<a class="" href="">Заказы</a>
+	<br>
+	<br>
+	<a class="" href="">Возвраты</a>
+	<br>
+	<br>
+	<a class="" href="">Промокоды</a>
+	</div>
+
+	<div class="personal-data">
+		<p class="moi-dan">Мои данные</p>
+		<img class="avatar-lk" src="img/avatar-lk.png" alt="">
+		<label class="name-head name-data data-label" for="#">Имя</label>
+		<input class="name-data data-form-input popup-form-input" type="text"> 
+		<label class="familia-head data-label" for="#">Фамилия</label>
+		<input class="familia-data data-form-input popup-form-input" type="text"> 
+		<label class="otchestvo-head data-label" for="#">Отчество</label>
+		<input class="otchestvo-data data-form-input popup-form-input" type="text">
+		<br>
+		<br>
+		<br>
+		<label class="datebirth-head data-label" for="#">Дата рождения</label>
+		<input class="name-data data-form-input popup-form-input" type="text">
+		<label class="telephon-head data-label" for="#">Телефон</label>
+		<input class="familia-data data-form-input popup-form-input" type="text">
+		<label class="email-head data-label" for="#">Email</label>
+		<input class="otchestvo-data data-form-input popup-form-input" type="text">
+		<br>
+		<br>
+		<br>
+		<br>
+		<button class="button-sohr button-entry-entry popup-form-btn-reg" type="submit">Сохранить</button>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
+
+	<script>
+ $(document).ready(function(){
+ 	$('.popup-btn').on('click', function(event) {
+ 		event.preventDefault();
+ 		$('.popup').fadeIn();
+ 	});
+ 	$('.popup-close').on('click', function(event) {
+ 		event.preventDefault();
+ 		$('.popup').fadeOut();
+ 	});
+ 	$('.popup-btn-reg').on('click', function(event) {
+ 		event.preventDefault();
+ 		$('.popup-reg').fadeIn();
+ 	});
+ 	$('.popup-close-reg').on('click', function(event) {
+ 		event.preventDefault();
+ 		$('.popup-reg').fadeOut();
+ 	});
+  $('.features-slider').slick({
+  	infinite: true,
+  	slidesToShow: 4,
+  	slidesToScroll: 1,
+  	responsive: [
+  	    {
+  	      breakpoint: 991,
+  	      settings: {
+  	        slidesToShow: 2,
+  	        prevArrow: '<button class="prev arrow"></button>',
+  	        nextArrow: '<button class="next arrow"></button>',
+  	        slidesToScroll: 2
+  	      }
+  	    },
+  	    {
+  	      breakpoint: 767,
+  	      settings: {
+  	        slidesToShow: 1,
+  	        slidesToScroll: 1,
+  	        prevArrow: '<button class="prev arrow"></button>',
+  	        nextArrow: '<button class="next arrow"></button>'
+  	      }
+  	    }
+  	  ]
+  });
+ });
+</script>
+
+
+
+<body>
+<html>

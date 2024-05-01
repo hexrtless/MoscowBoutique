@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+	<link rel="stylesheet" href="css/site-1-css.css">
+</head>
+<body>
+
+	<div class="shapka">
+	<a class="city">г. Москва</a>
+	<a class="korzina" href="Basket.html">Корзина</a>
+	<a href="Favourites.html">Избранное</a>
+	<a href="Account.html">Личный кабинет</a>>
+</div>
+	<div class="gender">
+	<a class="woman" href="cloth_woman.html">Женщинам</a>
+	<a class="man" href="Account.html">Мужчинам</a>
+	<a class="kid" href="Account.html">Детям</a>
+	<button class="button-entry popup-btn">Войти</button>
+	<button class="button-registration popup-btn-reg">Регистрация</button>
+	<div>
+	<img class="logo" src="img/logo_boutique.png">
+	<div class="kategorii">
+	<a class="novinki" href="cloth_woman.html">Новинки</a>
+	<a class="odezda" href="Account.html">Одежда</a>
+	<a class="obuv" href="Account.html">Обувь</a>
+	<a class="akses" href="Account.html">Аксессуары</a>
+	<a class="brands" href="Account.html">Бренды</a>
+	<a class="sport" href="Account.html">Спорт</a>
+	<a class="skidki" href="Account.html">Скидки %</a>
+	</div>
+	<img class="man_main" src="img/man_main.png">
+	<img class="let_obuv" src="img/let_obuv.png">
+	<img class="beisbolka" src="img/beisbolka.png">
+
+
+<div class="popup">
+	<!-- Само (белое) модальное окно -->
+	<div class="popup-dialog">
+		<!-- Содержимое модального окна -->
+		<div class="popup-content">
+			<button class="popup-close">&times;</button>
+			<h4 class="popup-header">Добро пожаловать в Moscow Boutique</h4>
+			<div class="main-form popup-form">
+				<form action="#">
+					<label for="#">Ваш email или телефон</label>
+					<input class="main-form-input popup-form-input" type="text"> 
+					<label for="#">Пароль</label>
+					<input class="main-form-input popup-form-input" type="text">
+					<button class="button-entry-entry popup-form-btn" type="submit">Войти</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="popup-reg">
+	<!-- Само (белое) модальное окно -->
+	<div class="popup-dialog-reg">
+		<!-- Содержимое модального окна -->
+		<div class="popup-content-reg">
+			<button class="popup-close-reg">&times;</button>
+			<h4 class="popup-header">Добро пожаловать в Moscow Boutique</h4>
+			<div class="main-form popup-form-reg">
+				<form action="#">
+					<label for="#">Введите свое имя</label>
+					<input class="main-form-input popup-form-input-reg" type="text"> 
+					<label for="#">Введите свой email</label>
+					<input class="main-form-input popup-form-input-reg" type="text"> 
+					<label for="#">Введите свой телефон</label>
+					<input class="main-form-input popup-form-input-reg" type="text"> 
+					<label for="#">Придумайте пароль</label>
+					<input class="main-form-input popup-form-input-reg" type="text">
+					<label for="#">Повторите пароль</label>
+					<input class="main-form-input popup-form-input-reg" type="text"> 
+					<button class="button-entry-entry popup-form-btn-reg" type="submit">Зарегистрироваться</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
+
+	<script>
+ $(document).ready(function(){
+ 	$('.popup-btn').on('click', function(event) {
+ 		event.preventDefault();
+ 		$('.popup').fadeIn();
+ 	});
+ 	$('.popup-close').on('click', function(event) {
+ 		event.preventDefault();
+ 		$('.popup').fadeOut();
+ 	});
+ 	$('.popup-btn-reg').on('click', function(event) {
+ 		event.preventDefault();
+ 		$('.popup-reg').fadeIn();
+ 	});
+ 	$('.popup-close-reg').on('click', function(event) {
+ 		event.preventDefault();
+ 		$('.popup-reg').fadeOut();
+ 	});
+  $('.features-slider').slick({
+  	infinite: true,
+  	slidesToShow: 4,
+  	slidesToScroll: 1,
+  	responsive: [
+  	    {
+  	      breakpoint: 991,
+  	      settings: {
+  	        slidesToShow: 2,
+  	        prevArrow: '<button class="prev arrow"></button>',
+  	        nextArrow: '<button class="next arrow"></button>',
+  	        slidesToScroll: 2
+  	      }
+  	    },
+  	    {
+  	      breakpoint: 767,
+  	      settings: {
+  	        slidesToShow: 1,
+  	        slidesToScroll: 1,
+  	        prevArrow: '<button class="prev arrow"></button>',
+  	        nextArrow: '<button class="next arrow"></button>'
+  	      }
+  	    }
+  	  ]
+  });
+ });
+</script>
+
+
+
+<body>
+<html>
